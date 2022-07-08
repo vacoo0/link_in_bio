@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Anna Jagod Mrożek - Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundColor: 0x55b6b6,
+          color1: 0x0,
+          color2: 0x244855,
+          backgroundAlpha: 0.35,
+        });
+        setTimeout(()=> {
+            const main = document.querySelector('main')
+            main.style.opacity = 1
+            main.style.filter = 'blur(0px)'
+        }, 1000)
+        
+    });
+    </script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div id="vanta">
+    </div>
+    <main>
+      <header>
+        <img src="./images/logo.jpg" />
+        <h1>@anna.jagoda.mrozek</h1>
+        <ul>
+          <li>
+            <img src="./images/226776.png" alt="Homepage" width="20" />
+            <a href="https://www.effataanima.pl/">Official Website</a>
+          </li>
+
+          <li>
+            <img src="./images/yt.png" alt="YouTube" width="20" />
+            <a href="https://www.youtube.com/c/EffataAnima">YouTube</a>
+          </li>
+
+          <li>
+            <img src="./images/fb.png" alt="Facebook" width="20" />
+            <a href="https://www.facebook.com/effataanima">Facebook</a>
+          </li>
+
+          <li>
+            <img src="./images/linked.png" alt="Linkedin" width="20" />
+            <a href="https://pl.linkedin.com/in/effataanima">Linkedin</a>
+          </li>
+        </ul>
+      </header>
+    </main>
+  </body>
+</html>
