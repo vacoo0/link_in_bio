@@ -7,9 +7,11 @@ body, html {
     background: url(./images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-
-main{
+main {
     position: relative;
+}
+main.animated {
+    
     opacity: 0;
     filter: blur(2px);
     transition: opacity 2s ease-in-out, filter 2s ease-in-out;
